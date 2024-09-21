@@ -1,0 +1,61 @@
+
+class Sigma 
+{
+    talk()
+    {
+        print "Call me the sigma";
+    }
+}
+
+class Sasank < Sigma
+{
+    introduce()
+    {
+        print "Hi i'm 6 foot 4.";
+
+        if(this.muscular)
+        {
+            print "I have a muscular build";
+        }
+        else
+        {
+            print "I'm in paris bro I can't workout rn.";
+        }
+    }
+}
+
+class Nicolas < Sigma
+{
+    talk()
+    {
+        print "Call me the medical sigma.";
+    }
+
+    somemaths(n)
+    {
+        var counter = 0;
+        for(var i = 0; i < n; i = i+1)
+        {
+            print counter;
+            counter = counter + i;
+        }
+    }
+
+    init()
+    {
+        print "Nimbulus generating.";
+    }
+}
+
+var me = Sigma();
+me.talk();
+
+var bane = Sasank();
+bane.muscular = false;
+bane.talk();
+bane.introduce();
+
+
+var nici = Nicolas();
+nici.talk();
+nici.somemaths(10);
